@@ -40,9 +40,7 @@ Route::post('/admin/add/watches', [AdminController::class, 'WatchStore'])->name(
 
 
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+
 
 Auth::routes();
 
